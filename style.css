@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* Navbar */
+header {
+    background: #111;
+    color: #fff;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    font-size: x-large;
+    color: gold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #1a5a69;
+    text-decoration: none;
+}
+
+/* Home */
+.home {
+    height: 100vh;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    animation: fadeIn 1.5s ease-in;
+}
+
+.home h1 {
+    font-size: 3rem;
+}
+
+.home p {
+    margin: 15px 0;
+}
+
+.home button {
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#about{
+    height: 100vh;
+}
+#problem{
+    height: 100vh;
+}
+
+#solution{
+    height: 100vh;
+}
+
+#contact{
+    height: 100vh;
+}
+
+
+/* Sections */
+.section {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+form button {
+    padding: 10px;
+    background: #111;
+    color: white;
+    border: none;
+}
+
+.social a {
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+}
