@@ -1,3 +1,6 @@
+window.alert("Sorry for this simple webpage, due to time constraint i unable to build it completely");
+
+
 // Smooth Scroll
 function scrollToSection(sectionId) {
     document.getElementById(sectionId).scrollIntoView({
